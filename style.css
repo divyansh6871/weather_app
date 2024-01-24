@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background: none; */
+}
+
+.main_container{
+    min-width: 320px;
+    max-width: 540px;
+    color: white;
+}
+
+.bg{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/photo/back1.webp);
+    background-position: center;
+    background-size: cover;
+}
