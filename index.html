@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Weather App</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -21,8 +21,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" style="font-size: larger; font-weight: 650;" href="#">GET ACCURATE CLIMATIC DETAILS</a>
         </div>
       </div>
     </div>
@@ -47,48 +46,64 @@
 
   <div class="container-fluid p-4" style="text-align: center; color: white;">
     <div class="row">
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+      <div style="text-align: center; font-size: xx-large; font-weight: 600;">Top Cities</div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
         <img src="photo/delhi.jpg" width="100%" alt="">
+        <div style="text-align: center; font-size: larger">Delhi</div>
         <div>Temprature : <span id="delhi1"></span></div>
         <div>Minimum temprature : <span id="delhi2"></span></div>
         <div>Maximum temprature : <span id="delhi3"></span></div>
         <div>Wind speed : <span id="delhi4"></span></div>
         <div>Wind degree : <span id="delhi5"></span></div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
         <img src="photo/tokyo.jpg" width="100%" alt="">
+        <div style="text-align: center; font-size: larger">Tokyo</div>
         <div>Temprature : <span id="tokyo1"></span></div>
         <div>Minimum temprature : <span id="tokyo2"></span></div>
         <div>Maximum temprature : <span id="tokyo3"></span></div>
         <div>Wind speed : <span id="tokyo4"></span></div>
         <div>Wind degree : <span id="tokyo5"></span></div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
         <img src="photo/sydney.webp" width="100%" alt="">
+        <div style="text-align: center; font-size: larger">Sydney</div>
         <div>Temprature : <span id="sydney1"></span></div>
         <div>Minimum temprature : <span id="sydney2"></span></div>
         <div>Maximum temprature : <span id="sydney3"></span></div>
         <div>Wind speed : <span id="sydney4"></span></div>
         <div>Wind degree : <span id="sydney5"></span></div>
       </div>
-      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
         <img src="photo/california.jpg" width="100%" alt="">
+        <div style="text-align: center; font-size: larger">California</div>
         <div>Temprature : <span id="california1"></span></div>
         <div>Minimum temprature : <span id="california2"></span></div>
         <div>Maximum temprature : <span id="california3"></span></div>
         <div>Wind speed : <span id="california4"></span></div>
         <div>Wind degree : <span id="california5"></span></div>
       </div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+        <img src="photo/ayodhya.avif" width="100%" alt="">
+        <div style="text-align: center; font-size: larger">Ayodhya</div>
+        <div>Temprature : <span id="ayodhya1"></span></div>
+        <div>Minimum temprature : <span id="ayodhya2"></span></div>
+        <div>Maximum temprature : <span id="ayodhya3"></span></div>
+        <div>Wind speed : <span id="ayodhya4"></span></div>
+        <div>Wind degree : <span id="ayodhya5"></span></div>
+      </div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-12" style="text-align: center;">
+        <img src="photo/mumbai.webp" width="100%" alt="">
+        <div style="text-align: center; font-size: larger">Mumbai</div>
+        <div>Temprature : <span id="mumbai1"></span></div>
+        <div>Minimum temprature : <span id="mumbai2"></span></div>
+        <div>Maximum temprature : <span id="mumbai3"></span></div>
+        <div>Wind speed : <span id="mumbai4"></span></div>
+        <div>Wind degree : <span id="mumbai5"></span></div>
+      </div>
     </div>
   </div>
 
-
-
-  <!-- <div style="background-color: #780000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae!</div>
-  <div style="background-color: #c1121f;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae!</div>
-  <div style="background-color: #fdf0d5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae!</div>
-  <div style="background-color: #003049;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae!</div>
-  <div style="background-color: #669bbc;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vitae!</div> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
