@@ -1,5 +1,3 @@
-
-
 const options = {
     method: "GET",
     headers: {
@@ -155,3 +153,63 @@ async function sydney() {
     }
 }
 sydney()
+
+
+async function mumbai() {
+    try {
+        let city = document.getElementById("city").value;
+        console.log(city);
+        let url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=mumbai`;
+        console.log(url);
+        const response = await fetch(url, options);
+        const result = await response.json();
+        cloud_pct = result.cloud_pct
+        temp = result.temp
+        feels_like = result.feels_like
+        humidity = result.humidity
+        min_temp = result.min_temp
+        max_temp = result.max_temp
+        wind_speed = result.wind_speed
+        wind_degrees = result.wind_degrees
+        sunrise = result.sunrise
+        sunset = result.sunset
+        document.getElementById("mumbai1").innerHTML=temp;
+        document.getElementById("mumbai2").innerHTML=min_temp;
+        document.getElementById("mumbai3").innerHTML=max_temp;
+        document.getElementById("mumbai4").innerHTML=wind_speed;
+        document.getElementById("mumbai5").innerHTML=wind_degrees;
+    } catch (error) {
+        console.log(error);
+    }
+}
+mumbai()
+
+
+async function ayodhya() {
+    try {
+        let city = document.getElementById("city").value;
+        console.log(city);
+        let url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=ayodhya`;
+        console.log(url);
+        const response = await fetch(url, options);
+        const result = await response.json();
+        cloud_pct = result.cloud_pct
+        temp = result.temp
+        feels_like = result.feels_like
+        humidity = result.humidity
+        min_temp = result.min_temp
+        max_temp = result.max_temp
+        wind_speed = result.wind_speed
+        wind_degrees = result.wind_degrees
+        sunrise = result.sunrise
+        sunset = result.sunset
+        document.getElementById("ayodhya1").innerHTML=temp;
+        document.getElementById("ayodhya2").innerHTML=min_temp;
+        document.getElementById("ayodhya3").innerHTML=max_temp;
+        document.getElementById("ayodhya4").innerHTML=wind_speed;
+        document.getElementById("ayodhya5").innerHTML=wind_degrees;
+    } catch (error) {
+        console.log(error);
+    }
+}
+ayodhya()
